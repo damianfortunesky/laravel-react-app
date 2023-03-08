@@ -1,0 +1,51 @@
+1. Instalar Composer y Nodejs
+2. IDE y XAMPP
+
+3. Instalar y crear proyecto laravel:
+    3.1 cmd + path XAMPP -> composer global require laravel/installer
+    3.2 cmd + path XAMPP -> laravel new nombre-proyecto 
+    3
+
+4. laravel  
+    4.1 bash (corre sv lh)-> php artisan serve 
+    4.2 migrations -> php artisan migrate 
+
+5. DB
+    5.1 Crear db y conectarla en archivo .env + gitignore
+
+6. Instalar vite 
+    6.1 bash + npm create viute@latest 
+    6.2 nombre + framework + lenguaje 
+    6.3 cd dir + npm install + npm run dev
+
+    6.3 cambiar en front package.json -> scripts{dev:"vite --`port=3000"}
+
+
+7. React
+
+    7.1 main js es el archivo que corre la app y App.jsx es el componente principal
+    7.2 limpiar index.css + App.css + react.svg
+
+    7.3 npm install react-router-dom
+
+8. Tailwind
+    8.1   bash en carpeta front + npm install -D tailwindcss postcss autoprefixer
+    8.2   npx tailwindcss init -p
+    8.3.1 configurar tailwind.config.cjs -> module.exports = {
+                                                            content: [
+                                                                "./index.html",
+                                                                "./src/**/*.{js,jsx,ts,tsx}"],
+                                                            theme: {
+                                                                extend: {},
+                                                            },
+                                                            plugins: [],
+                                                        }
+
+    8.3.2 .editorconfig (backend) -> [*.{js,jsx,cjs}]
+                                     indent_size = 2 
+
+    8.3.3 Agregar @tailwind base; @tailwind components; @tailwind utilities; -> index.jsx 
+
+    8.4 correr -> npm run dev
+
+    8.5 instalar en front -> npm install @heroicons/react
